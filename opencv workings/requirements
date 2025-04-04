@@ -1,0 +1,12 @@
+basic.py - Basic input/output operations of images and videos
+blurring.py - blurring
+color spaces.py - color spaces
+croppig.ppy - cropping and resizing
+color spaces.py - color space conversion
+countour.py - object detection
+edge detection.py - edge detection
+drawings.py - drawings
+threshold.py - threshold
+
+REQUIREMENTS:
+opencv-python==4.6.0.66
