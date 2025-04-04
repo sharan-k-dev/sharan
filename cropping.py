@@ -1,23 +1,22 @@
 import os
 import cv2
 
-#visualising the image
-img = cv2.imread(os.path.join('.','data','dogs.jpg'))
+image_path = os.path.join('.','data','dog.png')
 
-cv2.imshow('frame',img)
-cv2.waitKey(0)
-print(img.shape)
+#reading an image and getting its info:
+img = cv2.imread(image_path)
+print(type(img))
+print('original image',img.shape)  
+
 
 #resisimng the image:
 resised_image = cv2.resize(img,(720,490))
+print('resized image',resised_image.shape)
+
+cv2.imshow('resised_frame',img)
+cv2.waitKey(0)
 
 cv2.imshow('resised_frame',resised_image)
 cv2.waitKey(0)
-print('original image',resised_image.shape)
+print('resized image',resised_image.shape)
 
-#cropping the image:
-
-cropped_image = img[220:900,100:870]
-cv2.imshow('frame',cropped_image)
-cv2.waitKey(0)
-print('cropped image',cropped_image.shape)
